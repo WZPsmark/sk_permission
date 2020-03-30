@@ -1,0 +1,3 @@
+rootProject.name='SkPermissionDemo'
+include ':app'
+include ':sk_permission'
