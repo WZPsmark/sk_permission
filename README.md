@@ -28,10 +28,13 @@ aop代理模式Android权限请求工具库，无需添加任何业务代码，�
 同步完成后则可使用
 
 
-在需要申请权限的方法上加入 注解：@ApplyPermission(permission = {Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.CAMERA},requestCode = 1)，
+在需要申请权限的方法上加入 
+注解：@ApplyPermission(permission = {Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.CAMERA},requestCode = 1)，
 可随意添加你需要申请的权限，填入requestCode 
-并在处理权限取消的方法上加入注解 @CancerPermission，在处理权限拒绝的方法上加入注解  @RefusePermission ，
-便可根据requestCode进行相应的处理，且本库包含用户拒绝权限后跳手机权限设置工具类，
+并在处理权限取消的方法上加入注解 @CancerPermission，
+在处理权限拒绝的方法上加入注解@RefusePermission ，
+便可根据requestCode进行相应的处理，
+且本库包含用户拒绝权限后跳手机权限设置工具类，
 可跳经过适配的不同手机权限设置： PermissionSettingUtil.goFitSetting(MainActivity.this);
 也可跳默认手机设置页面 PermissionSettingUtil.goDefaultSetting(MainActivity.this);
 也可以自定义intent ： PermissionSettingUtil.goCustomSetting(MainActivity.this,new Intent());
@@ -75,4 +78,7 @@ aop代理模式Android权限请求工具库，无需添加任何业务代码，�
                 .create();
         alertDialog.show();
     }
+	
+	
+注：如觉得好用的话，给up点个star吧
 
